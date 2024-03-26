@@ -46,7 +46,9 @@ $(function () {
     createPlatform(500, 500, 150, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(600, 150, 200, 20);
     createPlatform(800, 600, 200, 10);
-    
+    createPlatform(900, 400, 200, 10);
+    createPlatform(650, 550, 100, 30);
+
 
     
     // TODO 2
@@ -67,7 +69,7 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
     createCannon("right", 700, 1000); // cannon on left wall, 600px down, shooting half per second
     createCannon("top", 800, 1000); // cannon on top wall, 600px down, shooting once per second
-
+    createCannon("left", 500, 1000);
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
