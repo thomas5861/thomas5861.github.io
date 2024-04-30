@@ -110,9 +110,14 @@
            the left side of the screen.
            */
            function handleBoxClick() {
+            if (speed > 0) {
+                speed = speed = 3;
+            } else if (speed < 0) {
+                speed = speed - 3;
+            }
                // your code to increase the points vairable by 1
                positionX = 0;
-               speed = speed + 3;
+               speed += 3;
                points = points + 1;
                    changeBoxText(points);
 
