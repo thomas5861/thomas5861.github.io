@@ -32,13 +32,9 @@ var init = function (window) {
         circles.push(circle);
         }
         // TODO 3 / 7 : Call the drawCircle() function 
-        var loopsCompleted = 0;
-        while (loopsCompleted < 100) {
-          // do something
-          drawCircle()
-          loopsCompleted++;
+        for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++){
+            drawCircle();
         }
-        
     
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -77,9 +73,16 @@ var init = function (window) {
              if ( circle.x > canvas.width ) {
                 circle.x = 0;
             }
-            
-            
-            var rightEdge = circle.x + circle.radius;
+            if (circle.y < 0 ) {
+                circle.y = 0;
+            }
+            if (circle.x < 0) {
+                circle.x = 0;
+            }
+            if (circle.y > canvas.height) {
+                circle.y = 0;
+            }
+           
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
